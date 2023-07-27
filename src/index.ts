@@ -30,7 +30,8 @@ function runQuiz(questions: Question[]):void{
     let score = 0;
     for(let question of questions){
         let answer:string = askQuestion(question);
-        if (question.answer = question.answer) score ++;
+        if (answer === question.answer) score ++;
     }
+    console.log(`Your score is ${score}/${questions.length}`)
 }
-askQuestion(questions[0]);
+runQuiz(questions);
